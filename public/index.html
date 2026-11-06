@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload large files</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Upload large files</h1>
+      <p>Files are sent in small pieces. If your connection drops or you close the tab, add the same file again and it continues where it stopped.</p>
+    </header>
+
+    <label class="drop" id="drop" for="file-input">
+      <input id="file-input" class="visually-hidden" type="file" multiple>
+      <span class="drop-title">Drop files here</span>
+      <span class="drop-sub">or click to choose files</span>
+      <span class="drop-meta" id="limits"></span>
+    </label>
+
+    <section class="panel" aria-labelledby="queue-title">
+      <h2 id="queue-title">In progress</h2>
+      <ul class="list" id="queue"></ul>
+      <p class="empty" id="queue-empty">Nothing is uploading.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="files-title">
+      <h2 id="files-title">Uploaded files</h2>
+      <ul class="list" id="files"></ul>
+      <p class="empty" id="files-empty">No files yet.</p>
+    </section>
+  </main>
+
+  <div id="live" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <script src="/uploader.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

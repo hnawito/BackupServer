@@ -1,0 +1,15 @@
+{
+  "name": "big-file-uploader",
+  "version": "1.0.0",
+  "description": "Web app for uploading very large files in resumable chunks. No dependencies.",
+  "main": "server.js",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.15"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/api.test.js && node test/engine.test.js"
+  }
+}
