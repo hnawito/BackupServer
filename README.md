@@ -1,6 +1,6 @@
 # Big File Uploader
 
-A small web app for uploading very large files reliably. It has **no dependencies**: you only need Node.js 18.15 or newer, and there is nothing to `npm install`.
+A small web app for uploading very large files reliably, It help you to create a backupserver that is comptible with PC's and Phones. It has **no dependencies**: you only need Node.js 18.15 or newer, and there is nothing to `npm install`.
 
 ## Run it
 
